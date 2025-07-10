@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEGOF</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+     
+      <li><a href="#visao" class="menu-link">Visão Geral</a></li>
+      <li><a href="#unidades" class="menu-link">Unidades</a></li>
+    </ul>
+  </nav>
+
+  <main>
+   
+    <header>
+     
+      <h1>Descubra a <span class="highlight-text">SEGOF</span> do TJAC</h1>
+      <h2>Secretaria de Gestão Orçamentária e Finanças</h2>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar unidade ou divisão..." />
+        <button>🔍</button>
+      </div>
+
+<div class="search-info">
+  <p>RESOLUÇÃO Nº 331, DE 10 ABRIL DE 2025.</p>
+</div>
+
+    </header>
+
+    <section id="visao" class="section landing">
+      <h2>Atribuições</h2>
+      <div style="margin-top: 50px;">
+
+
+  <ul>
+    <li>
+      <details>
+        <summary>Coordenar e supervisionar as atividades relacionadas ao planejamento, execução e controle do orçamento, das finanças e dos custos do Tribunal.</summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Administrar os recursos orçamentários e financeiros do Poder Judiciário do Estado do Acre.</summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Assegurar a conformidade das operações financeiras e orçamentárias com as normas legais e regulatórias.</summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Planejar e gerir os recursos financeiros de forma eficiente e eficaz, garantindo a transparência e o atendimento aos objetivos estratégicos do Tribunal.</summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Prestar contas aos órgãos fiscalizadores, assegurando a correta aplicação dos recursos públicos. </summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Propor estratégias de eficiência financeira e melhoria contínua nos processos financeiros, orçamentários e contábeis.</summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Elaborar e revisar permanentemente plano de ampliação das receitas arrecadadas pelo Poder Judiciário do Estado do Acre. </summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Assinar notas de empenho, notas de liquidação e ordens de pagamento.</summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Autorizar suprimento de fundos a servidores, bem como aprovar a respectiva prestação de contas.</summary>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Despachar com o Presidente do Tribunal de Justiça e com o Secretário Geral sobre os assuntos orçamentário-financeiros, especialmente quanto à arrecadação e destinação dos recursos financeiros pertencentes ao Poder Judiciário do Estado do Acre.</summary>
+      </details>
+    </li>
+  </ul>
+</section>
+
+
+   <section id="unidades" class="section">
+    <h2>Unidades Organizacionais</h2>
+    <p>A SEGOF compreende as seguintes unidades organizacionais:</p>
+
+    <!-- CARD 1 -->
+    <div class="unit-card">
+      <div class="unit-header">
+        <div>
+          <h3>Gabinete da Secretaria</h3>
+          <div class="unit-meta">Responsável pela elaboração e acompanhamento do orçamento</div>
+          <div class="division-tags">
+         
+          </div>
+        </div>
+        <div class="unit-action">
+          <div class="unit-value">Mais informações</div>
+          <button class="unit-btn" onclick="openModal('modal-sub-orcamento')">Ver</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="unit-card">
+      <div class="unit-header">
+        <div>
+          <h3>Subsecretaria de Planejamento e Gestão Orçamentária</h3>
+          <div class="unit-meta">SUPLA</div>
+          <div class="division-tags">
+            <button class="division-pill" onclick="openModal('modal-contabilidade-publica')">Divisão de Planejamento e Acompanhamento Orçamentário</button>
+            <button class="division-pill" onclick="openModal('modal-prestacao-contas')">Divisão de Execução Orçamentária</button>
+          </div>
+        </div>
+        <div class="unit-action">
+          <div class="unit-value">Mais informações</div>
+          <button class="unit-btn" onclick="openModal('modal-sub-contabilidade')">Ver</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="unit-card">
+      <div class="unit-header">
+        <div>
+          <h3>Subsecretaria de Contabilidade</h3>
+          <div class="unit-meta">SUCON</div>
+          <div class="division-tags">
+            <button class="division-pill" onclick="openModal('modal-controle-interno')">Divisão de Contabilidade Pública</button>
+            <button class="division-pill" onclick="openModal('modal-execucao-financeira')">Divisão de Prestação de Contas</button>
+            
+          </div>
+        </div>
+        <div class="unit-action">
+          <div class="unit-value">Mais informações</div>
+          <button class="unit-btn" onclick="openModal('modal-sub-financeira')">Ver</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="unit-card">
+      <div class="unit-header">
+        <div>
+          <h3>Subsecretaria de Execução Financeira</h3>
+          <div class="unit-meta">SUEXE</div>
+          <div class="division-tags">
+            <button class="division-pill" onclick="openModal('modal-int')">Divisão de Controle Interno de Execução Financeira</button>
+            <button class="division-pill" onclick="openModal('modal-fin')">Divisão de Execução Financeira</button>
+            <button class="division-pill" onclick="openModal('modal-tes')">Divisão de Tesouraria</button>
+          </div>
+        </div>
+        <div class="unit-action">
+          <div class="unit-value">Mais informações</div>
+          <button class="unit-btn" onclick="openModal('modal-exFin')">Ver</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="unit-card">
+      <div class="unit-header">
+        <div>
+          <h3>Subsecretaria de Arrecadação e Custos</h3>
+          <div class="unit-meta">SUBAC</div>
+          <div class="division-tags">
+            <button class="division-pill" onclick="openModal('modal-plan')">Divisão de Gestão da Arrecadação das Serventias Judiciais e Extrajudiciais</button>
+            <button class="division-pill" onclick="openModal('modal-exec')">Divisão de Gestão de Custos</button>
+          </div>
+        </div>
+        <div class="unit-action">
+          <div class="unit-value">Mais informações</div>
+          <button class="unit-btn" onclick="openModal('modal-cust')">Ver</button>
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </section>
+
+
+
+  <!-- Modais - Subsecretarias -->
+  <div class="modal-window" id="modal-sub-orcamento">
+    <h3>Gabinete da Secretaria</h3>
+     <ul>
+        <li>Assessorar o Secretário de Gestão Orçamentária e Finanças no desempenho de  suas funções</li>
+        <li>Coordenar o fluxo de informações e processos entre as unidades subordinadas</li>
+        <li>Elaborar relatórios gerenciais e consolidar informações das áreas subordinadas</li>
+        <li>Assegurar o cumprimento dos prazos e normativas no âmbito da Secretaria</li>
+        <li>Promover a articulação entre a Secretaria e os demais setores do Tribunal</li>
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <div class="modal-window" id="modal-sub-contabilidade">
+    <h3>Subsecretaria de Planejamento e Gestão Orçamentária</h3>
+     <ul>
+        <li>Planejar e acompanhar a execução do orçamento anual, alinhando-o aos objetivos 
+estratégicos do Tribunal</li>
+        <li>Coordenar a elaboração da proposta orçamentária anual</li>
+        <li>Monitorar a execução orçamentária e propor ajustes, quando necessário</li>
+        <li>Assegurar a conformidade com as normas legais e regulatórias aplicáveis à 
+gestão orçamentária</li>
+        <li>Fornecer dados e relatórios sobre a execução orçamentária aos órgãos de controle 
+interno e externo</li>
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <div class="modal-window" id="modal-sub-financeira">
+    <h3>Subsecretaria de Contabilidade</h3>
+     <ul>
+        <li>Realizar a classificação e contabilização de receitas, despesas e de bens, 
+verificando a regularidade da informação contábil</li>
+        <li>Elaborar demonstrações contábeis obrigatórias, conforme normas aplicáveis</li>
+        <li>Examinar e acompanhar a escrituração e classificação dos registros contábeis</li>
+        <li>Elaborar balancetes, balanços e relatórios de gestão fiscal e prestar contas aos 
+órgãos de controle, demonstrando a aplicação correta dos recursos públicos</li>
+        <li>Monitorar mudanças nas normas contábeis e implementar atualizações 
+necessárias</li>
+        
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+ 
+  <div class="modal-window" id="modal-exFin">
+    <h3>Subsecretaria de Execução Financeira</h3>
+     <ul>
+        <li>Executar operações financeiras, incluindo pagamentos e transferências</li>
+        <li>Controlar o fluxo de caixa e gerenciar contas bancárias</li>
+        <li>Supervisionar a conformidade documental de processos de pagamento</li>
+        <li>Monitorar a compatibilidade entre a execução financeira e o planejamento 
+orçamentário</li>
+        <li>Garantir a transparência e eficiência nos desembolsos financeiros</li>
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+   <div class="modal-window" id="modal-cust">
+    <h3>Subsecretaria de Arrecadação e Custos</h3>
+     <ul>
+        <li>Monitorar e controlar a arrecadação das serventias judiciais e extrajudiciais</li>
+        <li>Analisar o desempenho financeiro e propor estratégias de aumento de receita</li>
+        <li>Apresentar análises de custos das unidades do Tribunal</li>
+        <li>Implementar estratégias de controle e eficiência de custos</li>
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+  <!-- Modais - Divisões -->
+  
+
+  <div class="modal-window" id="modal-contabilidade-publica">
+    <h3>Divisão de Planejamento e Acompanhamento Orçamentário</h3>
+    <ul>
+        <li>Definir e desenvolver metas orçamentárias em alinhamento com os objetivos 
+estratégicos do Poder Judiciário do Estado do Acre</li>
+        <li>Elaborar a proposta orçamentária anual, considerando as demandas das unidades 
+administrativas e judiciais</li>
+        <li>Monitorar a execução do orçamento e propor ajustes quando necessário</li>
+        <li>Fornecer dados e relatórios sobre a execução orçamentária para o Portal da 
+Transparência e órgãos de controle</li>
+        <li>Supervisionar e coordenar a coleta de dados para o planejamento estratégico 
+orçamentário</li>
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <div class="modal-window" id="modal-prestacao-contas">
+    <h3>Divisão de Execução Orçamentária</h3>
+    <ul>
+        <li>Acompanhar a execução orçamentária de convênios, fundos e unidades 
+administrativas</li>
+        <li>Realizar análises periódicas do orçamento e propor revisões, conforme necessário</li>
+        <li>Prestar suporte técnico às unidades administrativas em questões relacionadas à 
+execução orçamentária</li>
+        <li>Assegurar que os recursos orçamentários sejam utilizados de forma eficiente e 
+em conformidade com os objetivos estratégicos do Tribunal</li>
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <div class="modal-window" id="modal-controle-interno">
+    <h3>Divisão de Contabilidade Pública</h3>
+    <ul>
+        <li>Garantir o registro contábil de atos administrativos e financeiros, conforme normas 
+legais</li>
+        <li>Elaborar balancetes e demonstrações contábeis periódicas</li>
+        <li>Monitorar e aplicar atualizações nas normas de contabilidade pública</li>
+        <li>Controlar bens patrimoniais do Tribunal, incluindo aquisições, baixas e 
+depreciações</li>
+          <li>Integrar dados financeiros aos sistemas orçamentários e patrimoniais</li>
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <div class="modal-window" id="modal-execucao-financeira">
+    <h3>Divisão de Prestação de Contas</h3>
+    <ul>
+        <li>Preparar e enviar relatórios periódicos para o Tribunal de Contas do Estado, 
+Conselho Nacional de Justiça e outros órgãos fiscalizadores</li>
+        <li>Garantir a conformidade das prestações de contas com as normas legais</li>
+        <li>Implementar ações corretivas e preventivas recomendadas pelos órgãos de 
+controle</li>
+        <li>Organizar prestações de contas anuais e atender exigências legais</li>
+          
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <div class="modal-window" id="modal-int">
+    <h3>Divisão de Controle Interno de Execução Financeira</h3>
+    <ul>
+        <li>Verificar a conformidade documental dos processos de pagamento</li>
+        <li>Prevenir erros e irregularidades por meio de controles internos</li>
+        <li>Realizar auditorias internas em processos financeiros</li>
+        <li>Propor ações corretivas para aprimorar os processos de execução financeira</li>
+          
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+   <div class="modal-window" id="modal-fin">
+    <h3>Divisão de Controle Interno de Execução Financeira</h3>
+    <ul>
+        <li>Monitorar a execução financeira do Tribunal</li>
+        <li>Processar pagamentos de fornecedores, folha de pagamento e repasses 
+obrigatórios</li>
+        <li>Acompanhar empenhos, liquidações e pagamentos</li>
+        <li>Garantir que os desembolsos financeiros sigam o planejamento orçamentário</li>
+          
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <div class="modal-window" id="modal-tes">
+    <h3>Divisão de Controle Interno de Execução Financeira</h3>
+    <ul>
+        <li>Controlar o fluxo de caixa e as contas bancárias do Tribunal</li>
+        <li>Supervisionar a conciliação bancária e os registros financeiros</li>
+        <li>Gerenciar a aplicação de recursos financeiros do Tribunal</li>
+        <li>Manter relacionamento com instituições financeiras</li>
+          
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+   <!-- Modais - Divisões -->
+
+   <div class="modal-window" id="modal-plan">
+    <h3>Divisão de Gestão da Arrecadação das Serventias Judiciais e Extrajudiciais</h3>
+    <ul>
+        <li>Monitorar receitas das serventias judiciais e extrajudiciais</li>
+        <li>Desenvolver relatórios sobre o desempenho das receitas</li>
+        <li>Propor estratégias de aumento de arrecadação</li>
+        <li>Implementar melhorias nos processos informatizados de arrecadação</li>
+          
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <div class="modal-window" id="modal-exec">
+    <h3>Divisão de Gestão de Custos</h3>
+    <ul>
+        <li>Analisar custos das unidades administrativas e judiciais</li>
+        <li>Desenvolver métodos de rateio de custos</li>
+        <li>Elaborar relatórios financeiros detalhados</li>
+        <li>propor estratégias de eficiência e controle de custos</li>
+          
+        
+       
+      </ul>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
