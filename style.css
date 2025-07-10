@@ -74,20 +74,13 @@ body {
 
 .sidebar a:hover,
 .sidebar a.active {
-  background-color: #3b82f6;
-  color: white;
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 .sidebar a i {
   margin-right: 0.75rem;
   font-size: 1.1rem;
-}
-
-
-.sidebar a.active,
-.sidebar a:hover {
-  background-color: var(--secondary);
-  color: var(--white);
 }
 
 main {
@@ -101,7 +94,7 @@ main {
 header {
   text-align: center;
   margin-bottom: 3rem;
-  margin-top: 3rem; /* Título mais para baixo */
+  margin-top: 3rem;
 }
 
 header h1 {
@@ -158,7 +151,7 @@ header h2 {
   color: #1e3a8a;
 }
 
-/* Estilização diferente para a lista Atribuições */
+/* Lista Atribuições */
 #visao ul {
   display: flex;
   flex-wrap: wrap;
@@ -207,9 +200,7 @@ header h2 {
   white-space: normal;
 }
 
-
-
-
+/* Cards */
 .unit-card {
   background: #ffffff;
   border-radius: 10px;
@@ -278,14 +269,7 @@ header h2 {
   background-color: #4f46e5;
 }
 
-/* Modal window base styles */
-.modal-window {
-  display: none;
-}
-
-.modal-window.active {
-  display: block;
-}
+/* Modal base */
 .modal-window {
   position: fixed;
   top: 10%;
@@ -293,24 +277,26 @@ header h2 {
   transform: translateX(-50%);
   width: 90%;
   max-width: 700px;
-  height: auto;
+  max-height: 90vh;
   background: white;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   padding: 2rem;
-  padding-bottom: 4rem; /* espaço para o botão fechar */
+  padding-bottom: 4rem;
   overflow-y: auto;
   display: none;
-  z-index: 100;
+  z-index: 9999;
 }
 
-/* Centraliza o título e adiciona espaçamento inferior */
+.modal-window.active {
+  display: block;
+}
+
 .modal-window h3 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* Botão fechar posicionado no canto inferior direito */
 .modal-window button {
   position: absolute;
   bottom: 1.5rem;
@@ -329,7 +315,6 @@ header h2 {
   background: #b91c1c;
 }
 
-/* Lista dentro do modal */
 .modal-window ul {
   list-style-type: disc;
   padding-left: 1.5rem;
@@ -347,4 +332,63 @@ header h2 {
   pointer-events: none;
   user-select: none;
   transition: filter 0.3s ease;
+}
+
+/* 🔁 RESPONSIVIDADE */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: none;
+    border-right: none;
+    border-bottom: 1px solid var(--light-border);
+    z-index: 10;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .modal-window {
+    width: 95%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 85vh;
+    padding: 1.5rem;
+  }
+
+  .unit-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+  }
+
+  #visao ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #visao ul li details {
+    max-width: none;
+    width: 100%;
+  }
 }
